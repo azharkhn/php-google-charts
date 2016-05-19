@@ -1,16 +1,16 @@
-# PHP Google Charts
-It is a PHP wrapper of Google Visualization API and also contains DB class to get graphs based on SQL query results.
-Currenlty it supports Line Chart, Column Chart and Guage only.
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>PHP Google Charts</title>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>PHP Google Charts</h1>
 
-Please make sure that you have included Google API in HTML Page
+<?php 
 
-```
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-```
-
-# Column Chart from SQL Query
-
-```
 require_once('classes/classGRAPH.php');
 require_once('classes/classDB.php');
 	
@@ -44,12 +44,7 @@ $ColumnChart->set_chartGraph( "ColumnChart" );
 $ColumnChart->get_chartGraph();
 
 $objDB->sql_close();
-```
-
-# Line Chart from Static Values
-```
-require_once('classes/classGRAPH.php');
-require_once('classes/classDB.php');
+// -------------------------------------------------------------------------------------------------------------------------------					
 
 $LineChart = new Graph();
 				
@@ -64,5 +59,7 @@ $rows = array( 0 => array(0,5), 1 => array(1,10), 2 => array(2,15), 3 => array(3
 $LineChart->set_chartRows( $rows );
 $LineChart->set_chartGraph( "LineChart" ); 
 $LineChart->get_chartGraph();
-```
+?>
 
+	</body>
+</html>
