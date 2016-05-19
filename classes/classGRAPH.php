@@ -113,8 +113,7 @@ class Graph {
 					$single_row[$index2] = $rows[$index][$index2];
 			}
 			$this->rows[$index] = "[".implode(", ", $single_row)."]";
-		}
-		print $this->rows[$index];		
+		}	
 	}
 //======================================================================================================================================		
 	function get_chartRows () {
