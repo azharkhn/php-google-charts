@@ -8,7 +8,7 @@ Please make sure that you have included Google API in HTML Page
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 ```
 
-# Column Chart from SQL Query
+## Column Chart from SQL Query
 
 ```
 require_once('classes/classGRAPH.php');
@@ -46,7 +46,7 @@ $ColumnChart->get_chartGraph();
 $objDB->sql_close();
 ```
 
-# Line Chart from Static Values
+## Line Chart from Static Values
 ```
 require_once('classes/classGRAPH.php');
 require_once('classes/classDB.php');
